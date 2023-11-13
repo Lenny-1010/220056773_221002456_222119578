@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- for custom css file link  -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="register.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+<a href="#" class="logo"><strong>Tutor</strong>Ed. </a>
+
+    <nav class="navbar">
+        <a href="index.php">Home</a>
+        <a href="index.php">About</a>
+        <a href="index.php">Key Features</a>
+        <a href="index.php">Tutors</a>
+        <a href="index.php">Book A Session</a>
+        <a href="index.php">Review</a>
+        <a href="contact.php">Contact Us</a>
+        <a href="sign_up.php">Sign Up</a>
+        <a href="sign_in.php">Sign In</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!--sign up form begins-->
+<div class="register-container">
+     <h2>Registration</h2>
+ <form action="register.php" method="post" novalidate>
+
+     <label for="username">Username:</label> 
+     <input type="username" id="username" name="username"  required><br><br>
+       
+     <label for="email">Email:</label> 
+     <input type="email" id="email" name="email" required><br><br>
+      
+     <label for="password">Password:</label> 
+     <input type="password" id="password" name="password" required><br><br>       
+
+     <label for="password_confirmation">Repeat Password:</label>
+     <input type="password" id="password_confirmation" name="password_confirmation" required><br><br>
+
+     <button >Register</button>
+     
+     <a href="login.php" button >Log In</button></a>
+     <!-- type="submit" onclick="redirectToDashboard()" -->
+ </form>
+ </div>
+<!--sign up form ends-->
+
+</body>
+</html>

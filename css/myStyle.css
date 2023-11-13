@@ -1,0 +1,264 @@
+/* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 100%;
+    min-height: 100vh;
+    background:#003366;
+    color: #5a5a5a;
+    font-family: 'Helvetica', sans-serif;
+}
+nav{
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h1{
+    font-family: 'Georgia', sans-serif;
+    font-weight: 500;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525255;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    color: white;
+}
+.photo {
+    margin-right: 20px;
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.info {
+    max-width: 400px;
+}
+
+.info h1 {
+    font-family: 'Georgia', sans-serif;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 10px;
+}
+.friends-list {
+    list-style-type: decimal;
+    padding: 0;
+}
+
+.profile {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.photo {
+    margin-right: 20px;
+}
+
+.photo img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 1px solid white; /* Added this line */
+}
+.calendar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    color: black;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 100px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+.information-text {
+    color: white;
+}
+.information-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.user-response {
+    margin: 20px;
+}
+
+.register-container {
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center; /* Center the elements */
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #1a1a1a; /* Adjusting the color to match the existing style */
+}
+
+.register-container label {
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.register-container input {
+    width: calc(100% - 20px); /* Adjusting input width and adding a bit of spacing */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.register-container input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    vertical-align: middle;
+}
+.register-container button {
+    width: calc(100% - 20px); /* Adjusting button width and adding a bit of spacing */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.register-container button[type="submit"] {
+    margin-top: 10px; /* Add some space above the button */
+}
+.register-container label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 10px; /* Increase the margin for better spacing */
+}
+.login-container {
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.login-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
